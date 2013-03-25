@@ -1,8 +1,8 @@
-package eu.ydp.test;
+package net.zoldar.geocalc;
 
 import java.util.Scanner;
 
-public class AreaCalculator {
+public class GeoCalculator {
 
 	public static void main(String[] args) {
 		
