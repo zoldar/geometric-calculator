@@ -1,0 +1,4 @@
+net.zoldar.geocalc.calculator.calculations.area.CircleAreaCalculation
+net.zoldar.geocalc.calculator.calculations.area.SquareAreaCalculation
+net.zoldar.geocalc.calculator.calculations.area.RectangleAreaCalculation
+net.zoldar.geocalc.calculator.calculations.circumference.PolygonCircumferenceCalculation
