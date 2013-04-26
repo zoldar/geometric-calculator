@@ -10,9 +10,9 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 @RunWith(JUnit4.class)
-public class CalculatorIntegration {
+public class CalculatorShould {
     @Test
-    public void variousValidCalculations() {
+    public void correctlyExecuteValidCalculations() {
 	// Most basic usage without helpers
 	Square square = new Square(3);
 	SquareAreaCalculation areaCalculation = new SquareAreaCalculation();

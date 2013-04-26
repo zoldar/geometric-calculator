@@ -18,6 +18,10 @@ public class Shapes<T extends Shape> {
     }
     
     public Shape withArguments(Object ... args) {
+	return withArgumentsAsArray(args);
+    }
+    
+    public Shape withArgumentsAsArray(Object[] args) {
 	try {
 	    return (Shape) shapeClass.getConstructors()[0].newInstance(args);
 	} catch (IllegalArgumentException e) {

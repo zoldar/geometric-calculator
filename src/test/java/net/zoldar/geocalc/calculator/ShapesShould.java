@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 @RunWith(JUnit4.class)
-public class ShapesIntegration {
+public class ShapesShould {
     @Test
     public void givenExistingShapeNameAndProperArgumentsReturnShapeInstance() {
 	Shape circle = Shapes.forName("circle").withArguments(3);
@@ -26,17 +26,17 @@ public class ShapesIntegration {
     }
     
     @Test(expected=IllegalArgumentException.class)
-    public void throwsOnNonExistingShapeName() {
+    public void throwOnNonExistingShapeName() {
 	Shapes.forName("somenonexistantshape");
     }
     
     @Test(expected=IllegalArgumentException.class)
-    public void throwsOnWrongConstructorArguments() {
+    public void throwOnWrongConstructorArguments() {
 	Shapes.forName("square").withArguments(3, 4);
     }
     
     @Test(expected=IllegalArgumentException.class)
-    public void throwsOnCounstructorArgumentsBreakingContract() {
+    public void throwOnCounstructorArgumentsBreakingContract() {
 	Shapes.forName("square").withArguments(-3);
     }
 }

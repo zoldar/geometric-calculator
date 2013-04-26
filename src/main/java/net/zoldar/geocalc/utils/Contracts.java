@@ -15,6 +15,6 @@ public class Contracts {
     }
 
     public static boolean doublePositive(double radius) {
-	return Double.compare(radius, 0.0) >= 0;
+	return Double.compare(radius, 0.0) > 0;
     }
 }

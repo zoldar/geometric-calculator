@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 @RunWith(JUnit4.class)
-public class CalculationsIntegration {
+public class CalculationsShould {
     @Test
     public void givenAreaCalculationTypeAndShapeShouldReturnProperArea() {
 	Shape square = new Square(3);
@@ -41,7 +41,7 @@ public class CalculationsIntegration {
     }
     
     @Test(expected=IllegalArgumentException.class)
-    public void throwsOnNonExistingCalculationImplementationForShape() {
+    public void throwOnNonExistingCalculationImplementationForShape() {
 	Shape circle = new Circle(3);
 	Calculations.withType(CircumferenceCalculationType.class).computeFor(circle);
     }
